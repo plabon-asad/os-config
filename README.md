@@ -41,4 +41,9 @@ Name | Purpose
 [Postman](https://www.postman.com/) | API Tool
 
 
+### Development config
+
+Link | Name
+------------ | -------------
+[Rails](https://gorails.com/setup/windows/10) | Ruby and ROR
 
