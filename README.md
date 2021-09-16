@@ -2,7 +2,14 @@
 Setting up a Windows10 for Development
 
 ## Getting Started
-Trying to listing a brief list for development setup
+In [windows-10](https://www.microsoft.com/en-us/software-download/windows10) at first I got some issues there are - 
+
+1. Wrong keyword typing in "Keyboard"
+
+Problem | Solution
+------------ | -------------
+Keyboard typing | [Wrong keyword typing in "Keyboard"](https://www.youtube.com/watch?v=cT_6uDoq1QI)
+
 
 ### Install Apps
 
