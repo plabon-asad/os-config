@@ -19,7 +19,11 @@ File explorer tab install | [Download QTTabBar](http://qttabbar.wikidot.com/)
 
 ### Install Apps
 
->Don't install **Node.js**. Use **nvm** to install **Node.js** for any version install.
+>Don't install **Node.js** directly. 
+>
+>Use [**nvm**](https://github.com/coreybutler/nvm-windows/releases/download/1.1.7/nvm-setup.zip) to install **Node.js** for any version install.
+>
+>See details about [**nvm Usage**](https://github.com/coreybutler/nvm-windows)
 
 
 ### Apps List
