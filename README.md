@@ -46,7 +46,7 @@ Name | Purpose
 
 ## [SSH and Git Config](https://dev.to/bdbch/setting-up-ssh-and-git-on-windows-10-2khk)
 
-Create a SSH Key and config key with Github account
+Open **Windows terminal** to Create a **SSH Key and config key with Github** account.
 ```
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
@@ -58,10 +58,23 @@ type C:\Users\your_pc_user_name\.ssh\id_rsa.pub
 ```
 In terminal show you **ssh-key** copy it and add this key on your **Github, Bitbucket, etc.**
 
+### Globally git config
+
+[Download Git](https://git-scm.com/download/win) and **Install** it.
+After install open **Git-bash** terminal and type
+
+```
+git config --global user.name "your_github_user_name"
+
+git config --global user.email "your_github_email"
+```
+Congratulations! you have successfully config **git**.
 
 ### Development config
 
 Link | Name
 ------------ | -------------
+[Angular](url_here) | Angular
+[Ionic](url_here) | Ionic
 [Rails](https://gorails.com/setup/windows/10) | Ruby and ROR
 
