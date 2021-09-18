@@ -17,7 +17,7 @@ Driver Install | [Lenovo](https://pcsupport.lenovo.com/bd/en/products/laptops-an
 File explorer tab install | [Download QTTabBar](http://qttabbar.wikidot.com/)
 
 
-### Install Apps
+## Install Apps
 
 >Don't install **Node.js** directly. 
 >
@@ -43,6 +43,20 @@ Name | Purpose
 [Photoshop CC](https://www.adobe.com/products/photoshop.html) | Deep Design Tool
 [Illustrator CC](https://www.adobe.com/products/illustrator.html) | Deep Vector Design Tool
 [Postman](https://www.postman.com/) | API Tool
+
+## [SSH and Git Config](https://dev.to/bdbch/setting-up-ssh-and-git-on-windows-10-2khk)
+
+Create a SSH Key and config key with Github account
+```
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+This generates a new private SSH key with rsa encryption and **4096 bits**. It also generates a public key from the secret key which you can share around.
+
+#### Register your SSH Key on Github
+```
+type C:\Users\your_pc_user_name\.ssh\id_rsa.pub
+```
+In terminal show you **ssh-key** copy it and add this key on your **Github, Bitbucket, etc.**
 
 
 ### Development config
