@@ -76,5 +76,6 @@ Link | Name
 ------------ | -------------
 [Angular](url_here) | Angular
 [Ionic](url_here) | Ionic
+[Cordova](https://www.npmjs.com/package/cordova) | Cordova `npm install -g cordova`
 [Rails](https://gorails.com/setup/windows/10) | Ruby and ROR
 
