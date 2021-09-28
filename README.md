@@ -74,8 +74,8 @@ Congratulations! you have successfully config **git**.
 
 Link | Name
 ------------ | -------------
-[Angular](url_here) | Angular
-[Ionic](url_here) | Ionic
+[Angular](https://angular.io/cli) | Angular `npm install -g @angular/cli`
+[Ionic](https://ionicframework.com/docs/v3/developer-resources/platform-setup/windows-setup.html) | Ionic
 [Cordova](https://www.npmjs.com/package/cordova) | Cordova `npm install -g cordova`
 [Rails](https://gorails.com/setup/windows/10) | Ruby and ROR
 
