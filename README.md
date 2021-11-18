@@ -16,8 +16,15 @@ Keyboard typing | [Wrong keyword typing in "Keyboard"](https://www.youtube.com/w
 Driver Install | [Lenovo](https://pcsupport.lenovo.com/bd/en/products/laptops-and-netbooks/300-series/320-15isk/downloads/automatic-driver-update)
 File explorer tab install | [Download QTTabBar](http://qttabbar.wikidot.com/)
 
+## Windows-10: Some Essiential Apps 
 
-## Install Apps
+Name | Link
+------------ | -------------
+[Net Speed Monitor](https://netspeedmonitor.net/download/) | [See video](https://www.youtube.com/watch?v=haLNdy2ozrc)
+
+
+
+### Install Apps
 
 >Don't install **Node.js** directly. 
 >
