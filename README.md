@@ -37,19 +37,15 @@ Name | Link
 
 Name | Purpose
 ------------ | -------------
-[Visual Studio Code](https://visualstudio.microsoft.com/) | Text Editor
-[Google Chrome](https://www.google.com/chrome/fast-and-secure/) | Web Browser
-[Firefox](https://www.mozilla.org/en-US/firefox/products/) | Web Browser
+[Visual Studio Code](https://visualstudio.microsoft.com/), [Jetbrians Product](https://www.jetbrains.com/products/) | Text Editor
+[Google Chrome](https://www.google.com/chrome/fast-and-secure/), [Firefox](https://www.mozilla.org/en-US/firefox/products/) | Web Browser
 [Rectangle](https://rectangleapp.com/) | Window Resizing
-[Discord](https://discord.com/) | Communication (alt of [Slack](https://slack.com/))
-[Slack](https://slack.com/) | Communication
-[Photopea](https://www.photopea.com/) | Online Design Tool
-[Gravit Designer](https://www.designer.io/en/) | Design Tool
-[Figma](https://www.figma.com/) | Design Tool
-[Adobe XD](https://www.adobe.com/products/xd.html) | Design Tool
-[Photoshop CC](https://www.adobe.com/products/photoshop.html) | Deep Design Tool
-[Illustrator CC](https://www.adobe.com/products/illustrator.html) | Deep Vector Design Tool
+[Discord](https://discord.com/), [Slack](https://slack.com/), [Skype](https://skype.com/) | Communication Tools
+[Photopea](https://www.photopea.com/), [Gravit Designer](https://www.designer.io/en/), [Figma](https://www.figma.com/), [Adobe XD](https://www.adobe.com/products/xd.html) | Online Design Tool
+[Photoshop CC](https://www.adobe.com/products/photoshop.html), [Illustrator CC](https://www.adobe.com/products/illustrator.html) | Deep Design Tool
 [Postman](https://www.postman.com/) | API Tool
+[ngRok](https://ngrok.com/) | Make Public URL (Live Server)
+[BrowserStack](https://www.browserstack.com/) | Apps & Browser (Testing Tool)
 
 ## [SSH and Git Config](https://dev.to/bdbch/setting-up-ssh-and-git-on-windows-10-2khk)
 
