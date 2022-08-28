@@ -118,7 +118,7 @@ Command | Description and Link
 `sudo apt-get update` | Update Ubuntu
 `sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev` | First some dependencies for Ruby
 
-### Install `rvm`
+### Install `rvm` - [Help link](https://github.com/rvm/ubuntu_rvm)
 
 1. You need ***software-properties-common*** installed in order to add **PPA** repositories.
 ```
