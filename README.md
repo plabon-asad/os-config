@@ -111,5 +111,22 @@ Command | Description and Link
 
 Basic commands details [link](https://docs.microsoft.com/en-us/windows/wsl/basic-commands) here you can see and learn also more.
 
+### Setup development environment
+
+Command | Description and Link
+------------ | -------------
+`sudo apt-get update` | Update Ubuntu
+`sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev` | First some dependencies for Ruby
+
+
+
+
+
+
+
+
+
+
+
 
 Help key: []()@#$%&*
