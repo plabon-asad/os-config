@@ -118,15 +118,31 @@ Command | Description and Link
 `sudo apt-get update` | Update Ubuntu
 `sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev` | First some dependencies for Ruby
 
+### Install `rvm`
 
+1. You need ***software-properties-common*** installed in order to add **PPA** repositories.
+```
+sudo apt-get install software-properties-common
+```
 
+2. Add the PPA and install the package
+```
+sudo apt-add-repository -y ppa:rael-gc/rvm
+sudo apt-get update
+sudo apt-get install rvm
+```
 
+3. Add your user to rvm group ($USER will automatically insert your username)
+```
+sudo usermod -a -G rvm $USER
+```
 
+4. If you cannot force terminal to perform a login, or you're facing `Command 'rvm' not found`, you can run the following command to append it to your `.bashrc`
+```
+echo 'source "/etc/profile.d/rvm.sh"' >> ~/.bashrc
+```
 
-
-
-
-
+5. Now rebot your terminal and check status by run `rvm -v`
 
 
 Help key: []()@#$%&*
