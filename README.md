@@ -82,3 +82,34 @@ Link | Name
 [Cordova](https://www.npmjs.com/package/cordova) | Cordova `npm install -g cordova`
 [Rails](https://gorails.com/setup/windows/10) | Ruby and ROR
 
+## Getting Started with Windows 11
+
+Trying to config [Ubuntu](https://ubuntu.com/) without leaving Winodows by [WSL(Windows Subsystem for Linux)](https://ubuntu.com/wsl)
+
+### Prerequisites
+There are a few things you should know in advance before you start playing around with WSL.
+- `Turn Windows features on or off` by search Windows bar
+- Enables the optional `WSL`, `Virtual Machine Platform`, `Hyper-V` , `Virtual Mechine Platform`, `Windows Sandbox` components by checked it and need to restart your mechine.
+- Downloads and installs the latest Linux kernel
+- Sets WSL 2 as the default
+- Downloads and installs the Ubuntu Linux distribution (reboot may be required)
+
+Open cmd terminal for use these commands step by step.
+### Basic commands for WSL
+Command | Description and Link
+------------ | -------------
+`wsl --status` | Check WSL status.
+`wsl --install` | Install WSL and the Ubuntu distribution of Linux.
+`wsl --install --distribution <Distribution Name>` | Install a specific Linux distribution
+`wsl --install --distribution <Distribution Name>` | Designate a distribution of Linux for installation besides the default (Ubuntu) by replacing `<Distribution Name>` with the name of the distribution. This command can also be entered as: `wsl -d <Distribution Name>`.
+`wsl --list --online` or `wsl -l -o` | List available Linux distributions at online.
+`wsl --list --verbose` or `wsl -l -v` | See a list of the Linux distributions installed on your Windows machine, including the state (whether the distribution is running or stopped) and the version of WSL running the distribution (WSL 1 or WSL 2). Comparing WSL 1 and WSL 2. Additional options that can be used with the list command include: `--all` to list all distributions, `--running` to list only distributions that are currently running, or `--quiet` to only show distribution names.
+`wsl --set-version <distribution name> <versionNumber>` | To designate the version of WSL (1 or 2) that a Linux distribution is running on, replace `<distribution name>` with the name of the distribution and replace `<versionNumber>` with 1 or 2. Comparing WSL 1 and WSL 2.
+`wsl --set-default-version <Version>` | Set default WSL version
+`wsl --set-default <Distribution Name>` | Set default Linux distribution
+`wsl ~` | Change directory to home
+
+Basic commands details [link](https://docs.microsoft.com/en-us/windows/wsl/basic-commands) here you can see and learn also more.
+
+
+Help key: []()@#$%&*
