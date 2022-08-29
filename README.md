@@ -82,7 +82,7 @@ Link | Name
 [Cordova](https://www.npmjs.com/package/cordova) | Cordova `npm install -g cordova`
 [Rails](https://gorails.com/setup/windows/10) | Ruby and ROR
 
-## Getting Started with Windows 11
+## Linux setup by WSL in Windows-11
 
 Trying to config [Ubuntu](https://ubuntu.com/) without leaving Winodows by [WSL(Windows Subsystem for Linux)](https://ubuntu.com/wsl)
 
@@ -144,5 +144,9 @@ echo 'source "/etc/profile.d/rvm.sh"' >> ~/.bashrc
 
 5. Now rebot your terminal and check status by run `rvm -v`
 
+### Install Ruby
+Some necessary command of `rvm`. To see available version from online`rvm list known`, installed list of ruby`rvm list`, current using version`rvm current`, install latest version of ruby `rvm install ruby`, installed specific version of ruby `rvm install ruby_version_number` like `rvm install 2.3.1`
+
+N.B. If broken any installation of ruby for week network or any other reasons, you can fix it by ***reinstallation*** by `rvm reinstall ruby_version_number`. Before it you should restart the mechine.
 
 Help key: []()@#$%&*
