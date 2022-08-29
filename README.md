@@ -149,4 +149,31 @@ Some necessary command of `rvm`. To see available version from online`rvm list k
 
 ⛑️ If broken any installation of ruby for week network or any other reasons, you can fix it by ***reinstallation*** by `rvm reinstall ruby_version_number`. Before it you should restart the mechine.
 
-Help key: []()@#$%&*
+
+### Install Node.js by NVM - [Help Link](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-18-04)
+
+Before piping the command through to bash, it is always a good idea to audit the script to make sure it isn’t doing anything you don’t agree with. You can do that by removing the | bash segment at the end of the curl command
+``` 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh
+```
+
+Review the output and make sure you are comfortable with the changes it is making. Once you’re satisfied, run the same command with | bash appended at the end. The URL you use will change depending on the latest version of NVM, but as of right now, the script can be downloaded and executed by running the following
+``` 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+```
+
+This installs the nvm script to your user account. In order to use it, first source the .bashrc file
+``` 
+source ~/.bashrc
+```
+First, ask nvm what versions of Node are available
+``` 
+nvm ls-remote
+```
+
+Install a specific version of node
+```
+nvm install v16.13.1
+```
+
+After done check status `node -v`
