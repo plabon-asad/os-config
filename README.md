@@ -108,6 +108,7 @@ Command | Description and Link
 `wsl --set-default-version <Version>` | Set default WSL version
 `wsl --set-default <Distribution Name>` | Set default Linux distribution
 `wsl ~` | Change directory to home
+`explorer.exe .` | See full-path of WSL/Windows11 by terminal. Open terminal which one you want to see and run command, a folder will open with required path.
 
 Basic commands details [link](https://docs.microsoft.com/en-us/windows/wsl/basic-commands) here you can see and learn also more.
 
