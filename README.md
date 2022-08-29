@@ -177,3 +177,8 @@ nvm install v16.13.1
 ```
 
 After done check status `node -v`
+
+Install a specific version of Rails `gem install rails -v version_number`
+```
+gem install rails -v 7.0.2.4
+```
