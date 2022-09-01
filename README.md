@@ -112,7 +112,7 @@ Command | Description and Link
 
 Basic commands details [link](https://docs.microsoft.com/en-us/windows/wsl/basic-commands) here you can see and learn also more.
 
-<br>**📍How to navigate to any-drive in bash on WSL-Ubuntu?**
+<br>**📍To navigate to any-drive in bash on WSL-Ubuntu!** [Link here](https://askubuntu.com/questions/831361/can-i-change-directory-to-a-windows-drive-in-ubuntu-bash-on-wsl)
 
 WSL stores your Windows drives in the `/mnt` folder, with the name of the drive as a subfolder. For example your `C:\` drive will be present at `/mnt/c/` for you to use. Keeping this in mind, you can swap to your specific folder like so `cd /mnt/e/username/folder1/folder2`
 
