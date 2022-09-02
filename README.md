@@ -112,12 +112,11 @@ Command | Description and Link
 
 Basic commands details [link](https://docs.microsoft.com/en-us/windows/wsl/basic-commands) here you can see and learn also more.
 
-<br>**📍To navigate to any-drive in bash on WSL-Ubuntu!** [Link here](https://askubuntu.com/questions/831361/can-i-change-directory-to-a-windows-drive-in-ubuntu-bash-on-wsl)
+<br>**📍To navigate to any-drive in bash on WSL2-Ubuntu18.04!** [Link here](https://askubuntu.com/questions/831361/can-i-change-directory-to-a-windows-drive-in-ubuntu-bash-on-wsl)
 
 WSL stores your Windows drives in the `/mnt` folder, with the name of the drive as a subfolder. For example your `C:\` drive will be present at `/mnt/c/` for you to use. Keeping this in mind, you can swap to your specific folder like so `cd /mnt/e/username/folder1/folder2`
 
-<br>**📍Multiple terminal open in WSL-Ubuntu!** [Link here](https://askubuntu.com/questions/1074283/multiple-terminal-windows-in-windows-ubuntu)
-
+<br>**📍Multiple terminal open in WSL2-Ubuntu18.04!** [Link here](https://askubuntu.com/questions/1074283/multiple-terminal-windows-in-windows-ubuntu)
 
 ### Setup development environment
 
@@ -190,3 +189,43 @@ Install a specific version of Rails `gem install rails -v version_number`
 ```
 gem install rails -v 7.0.2.4
 ```
+
+### Install Mysql, Apache, PhpMyadmin in WSL2-Ubuntu18.04! [Link here](https://geekrewind.com/how-to-install-phpmyadmin-on-windows-11-wsl/)
+ 1. Install Apache HTTP Server
+ 2. Install MariaDB Database Server
+ 3. PHP and Related Modules
+ 4. Install phpMyAdmin
+<br> 
+
+1. To install Apache on Ubuntu `sudo apt install apache2`. After done, use command to stop, start and restrat **Apache2**: `sudo service apache2 stop`, `sudo service apache2 start`, and `sudo service apache2 restart`.
+2. To install MariaDB, run the commands below: `sudo apt-get install mariadb-server mariadb-client`. After installing MariaDB, the commands below can be used to stop, start and restart MariaDB services `sudo service mysql stop`, `sudo service mysql start`, and `sudo service mysql restart`.<br><br>
+Next, run the commands below to secure the database server with a root password if you were not prompted to do so during the installation 
+```sudo mysql_secure_installation```
+  When prompted, answer the questions below by following the guide.
+  - Enter current password for root (enter for none): Just press the Enter
+  - Set root password? [Y/n]: Y
+  - New password: Enter password
+  - Re-enter new password: Repeat password
+  - Remove anonymous users? [Y/n]: Y
+  - Disallow root login remotely? [Y/n]: Y
+  - Remove test database and access to it? [Y/n]:  Y
+  - Reload privilege tables now? [Y/n]:  Y <br>
+ To verify and validate that MariaDB is installed and working, login to the database console using the commands below: `sudo mysql -u root -p`
+3. PHP is a general-purpose scripting language that enables the LAMP and LEMP stack and is required by phpMyAdmin.To install PHP and recommended modules, run the commands below: `sudo apt install php libapache2-mod-php php-common php-mysql php-gmp php-curl php-intl php7.2-mbstring php-xmlrpc php-gd php-xml php-cli php-zip`<br>
+To verify php version write: `php -v`
+4. Now that you have installed Apache, MariaDB and PHP, run the commands below to install phpMyAdmin `sudo apt install phpmyadmin`.<br>
+When prompted to choose the webserver, select apache2 and continue. When prompted again to allow debconfig-common to install a database and configure select Yes.
+
+Enter a password and confirm for phpMyAdmin to register with the database, then select OK and complete the installation. MySQL and MariaDB come with a feature that provides root authentication via a **auth_socket plugin**.<br><br>This plugin authenticates users who connect from the localhost via socket file without prompting or using a password. If you attempt to logon to phpMyAdmin with the MariaDB root account, you won’t be allowed.<br><br>If you wish to use the root account to logon to phpMyAdmin, then use the steps below. To fix that, you’ll need to change the default authentication mechanism from auth_socket to mysql_native_password.<br><br>Login back into MariaDB console `sudo mysql`.
+
+Then run the commands below to change to disable **mysql_native_password** module.
+```
+USE mysql;
+UPDATE user SET plugin='' WHERE user ='root';
+```
+The save your changes and exit:
+``` 
+FLUSH PRIVILEGES;
+EXIT;
+```
+Restart **Apache** and browse to phpMyAdmin web portal using the URL: `http://localhost/phpmyadmin`
