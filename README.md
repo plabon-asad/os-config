@@ -28,9 +28,8 @@ Name | Link
 
 >Don't install **Node.js** directly. Use **nvm** to install **Node.js** multiple version.
 >
->
->
 >See details about [**nvm Usage**](https://github.com/coreybutler/nvm-windows)
+>
 
 1. Download nvm latest version for windows10, 11 [from here](https://github.com/coreybutler/nvm-windows/releases)
 2. Right click and open "Run as administrator"
@@ -38,6 +37,8 @@ Name | Link
 4. Open `cmd` windows-terminal with run as administrator **N.B. Make sure its run as Administrator**
 5. Run command `nvm install specific_version_number_of_node`, example: `nvm install 16.17.0`
 6. Then run `nvm use 16.17.0`
+
+You can check `npm` status by `npm --version` and install **Yarn** by `npm`. Type `npm install --global yarn` and check status `yarn --version`.
 
 ### Apps List
 
