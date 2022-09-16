@@ -84,7 +84,7 @@ Congratulations! you have successfully config **git**.
 
 Link | Name
 ------------ | -------------
-[Angular](https://angular.io/cli) | Angular `npm install -g @angular/cli`
+[Angular](https://angular.io/cli) | Angular `npm install -g @angular/cli`. On Windows client computers, the execution of PowerShell scripts is disabled by default. To allow the execution of PowerShell scripts, which is needed for npm global binaries, you must set the following `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned` [see here](https://angular.io/guide/setup-local)
 [Ionic](https://ionicframework.com/docs/v3/developer-resources/platform-setup/windows-setup.html) | Ionic
 [Cordova](https://www.npmjs.com/package/cordova) | Cordova `npm install -g cordova`
 [Rails](https://gorails.com/setup/windows/10) | Ruby and ROR
