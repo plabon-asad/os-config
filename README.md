@@ -237,3 +237,21 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 Restart **Apache** and browse to phpMyAdmin web portal using the URL: `http://localhost/phpmyadmin`
+
+### Install PG in WSL2-Ubuntu18.04!
+
+1. Open your WSL2 Ubuntu terminal and run `sudo apt-get update`
+2. Run `sudo apt install postgresql postgresql-contrib`
+3. Confirm installation by check version `psql --version`
+4. Check status, start, stop and restart pg server by command `sudo service postgresql status`, `sudo service postgresql start`, `sudo service postgresql stop`, and `sudo service postgresql restart`
+
+#### Make PG User
+1. Login to PG Console `sudo -u postgres psql`
+2. Create a DB `create database db_name;`
+3. Create a User on that DB `create user user_name with encrypted password 'password_for_user';`
+4. Set all grant access for this user `grant all privileges on database db_name to user_name;`
+5. Check all DB `\l` and exit console `\q`
+
+
+
+
