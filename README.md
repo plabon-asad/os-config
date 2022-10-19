@@ -21,6 +21,7 @@ File explorer tab install | [Download QTTabBar](http://qttabbar.wikidot.com/)
 Name | Link
 ------------ | -------------
 [Net Speed Monitor](https://netspeedmonitor.net/download/) | [See video](https://www.youtube.com/watch?v=haLNdy2ozrc)
+[OBS](https://obsproject.com/download), [BG remove plugin](https://github.com/royshil/obs-backgroundremoval) | [See video](https://www.youtube.com/watch?v=8798QbmWp08&ab_channel=MichaelFeyrerJr.)
 
 
 
