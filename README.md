@@ -253,6 +253,21 @@ Restart **Apache** and browse to phpMyAdmin web portal using the URL: `http://lo
 4. Set all grant access for this user `grant all privileges on database db_name to user_name;`
 5. Check all DB `\l` and exit console `\q`
 
+### Install Redis by WSL2 - [Link](https://redis.io/docs/getting-started/installation/install-redis-on-windows/)
+1. To install recent stable versions of Redis from the official packages. Add the repository to the apt index, update it, and then install.
+```
+curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg
 
+```
+```
+echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://packages.redis.io/deb $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/redis.list
 
+```
+```
+sudo apt-get update
+sudo apt-get install redis
 
+```
+2. After install check installed version `redis-server -v`
+3. Update `redis.conf` file, Run the folowing command to open `redis.conf` file: `sudo nano /etc/redis/redis.conf`. Find `supervised no` line and change to `supervised systemd`, save and exit. Since Ubuntu uses the systemd init system. 
+4. Check Redis status, start, stop and restart command `sudo service redis-server status/start/stop/restart`
