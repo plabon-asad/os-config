@@ -58,6 +58,8 @@ Name | Purpose
 
 ## [SSH and Git Config](https://dev.to/bdbch/setting-up-ssh-and-git-on-windows-10-2khk)
 
+Test your SSH key connection `ssh -T git@github.com`, [Link here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
+
 Open **Windows terminal** to Create a **SSH Key and config key with Github** account.
 ```
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
@@ -69,6 +71,17 @@ This generates a new private SSH key with rsa encryption and **4096 bits**. It a
 type C:\Users\your_pc_user_name\.ssh\id_rsa.pub
 ```
 In terminal show you **ssh-key** copy it and add this key on your **Github, Bitbucket, etc.**
+
+## Adding or changing a passphrase
+You can change the passphrase for an existing private key without regenerating the keypair by typing the following command:
+```
+$ ssh-keygen -p -f ~/.ssh/id_ed25519
+> Enter old passphrase: [Type old passphrase]
+> Key has comment 'your_email@example.com'
+> Enter new passphrase (empty for no passphrase): [Type new passphrase]
+> Enter same passphrase again: [Repeat the new passphrase]
+> Your identification has been saved with the new passphrase.
+```
 
 ### Globally git config
 
