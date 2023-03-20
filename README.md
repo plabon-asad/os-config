@@ -104,6 +104,12 @@ Link | Name
 [Cordova](https://www.npmjs.com/package/cordova) | Cordova `npm install -g cordova`
 [Rails](https://gorails.com/setup/windows/10) | Ruby and ROR
 
+## Shell config
+ - How do I know which shell using my `Linux` or `Mac` pc: `echo $SHELL`
+ - Go to directory and show hidden file for `Linux`- "Cntrl + h", `Mac`- "Command + Shift + ."
+ - Open it by text editor, edit it and save it. 
+ - After that reload this by terminal: `source ~/.zshrc` - (zshrc means which bash_profile are using)
+
 ## Linux setup by WSL in Windows-11
 
 Trying to config [Ubuntu](https://ubuntu.com/) without leaving Winodows by [WSL(Windows Subsystem for Linux)](https://ubuntu.com/wsl)
