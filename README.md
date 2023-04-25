@@ -110,6 +110,9 @@ Link | Name
  - Open it by text editor, edit it and save it. 
  - After that reload this by terminal: `source ~/.zshrc` - (zshrc means which bash_profile are using)
 
+## Environment Variable Set
+Here you will get some more helpful info, [Link...](https://developer.android.com/tools/variables#set)
+
 ## Linux setup by WSL in Windows-11
 
 Trying to config [Ubuntu](https://ubuntu.com/) without leaving Winodows by [WSL(Windows Subsystem for Linux)](https://ubuntu.com/wsl)
