@@ -65,7 +65,7 @@ Open **Windows terminal** to Create a **SSH Key and config key with Github** acc
 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 This generates a new private SSH key with rsa encryption and **4096 bits**. It also generates a public key from the secret key which you can share around.
-<br>N.B. Multiple ssh key config, [Link here](https://www.youtube.com/watch?v=pE3EuiyShoM)
+<br>🔰 N.B. Multiple ssh key config, [Link here](https://www.youtube.com/watch?v=pE3EuiyShoM)
 
 #### File & Folder Access by Terminal
 | Command  |  Description |
