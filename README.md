@@ -66,6 +66,17 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 This generates a new private SSH key with rsa encryption and **4096 bits**. It also generates a public key from the secret key which you can share around.
 
+#### File & Folder Access by Terminal
+| Command  |  Description |
+|---|---|
+|  `pwd` | Current directory path  |
+|  `cd` | Change directory path  |
+|  `ls -l ~/.ssh` | See (Read/Write) mode of that folders All files  |
+|  `cat ~/.ssh/id_rsa.pub` | This `cat` command concate all text from on that file  |
+|  `rm targeted_file` | Targeted file will be delete  |
+|  `rm targeted_file*` | File name matched with first by`targeted_file` and then all file on that named will be delete  |
+
+
 #### Register your SSH Key on Github
 ```
 type C:\Users\your_pc_user_name\.ssh\id_rsa.pub
