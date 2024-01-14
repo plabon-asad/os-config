@@ -1,4 +1,6 @@
-# Operating System Configuration
+# OS Configuration (Windows | Ubuntu | MacOS)
+
+Ubuntu dev environment setup [Link 1](https://gist.github.com/BeKnowDo/f4add66cc28083783e003785f86d7817), [Link 2](https://dev.to/erikaheidi/setting-up-an-ubuntu-2204-workstation-for-software-development-and-content-creation-1ddj)
 
 Setting up a Windows10 for Development
 
