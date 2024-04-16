@@ -58,6 +58,13 @@ Name | Purpose
 [ngRok](https://ngrok.com/) | Make Public URL (Live Server)
 [BrowserStack](https://www.browserstack.com/) | Apps & Browser (Testing Tool)
 
+### Development Config List
+
+Name | Purpose
+------------ | -------------
+[Terminal zsh](https://github.com/ohmyzsh/ohmyzsh) | Config theme: 'agnoster', Install icon: if terminal icon not found
+ZSH Plugin | Plugin: (git, autocomplete, asdf)
+
 ## [SSH and Git Config](https://dev.to/bdbch/setting-up-ssh-and-git-on-windows-10-2khk)
 
 Test your SSH key connection `ssh -T git@github.com`, [Link here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
