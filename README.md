@@ -66,6 +66,7 @@ Name | Purpose
 ZSH Plugin | Plugin: (git, autocomplete, asdf)
 asdf install | Version Management Tool for all (Ruby, Java, Node.js etc.)
 `asdf` important commands | version: `asdf version`, details-info: `asdf info`, current-status: `asdf current`, show-all-installed-list: `asdf list`
+`java` install | [Link here](./JAVA.md)
 
 ## [SSH and Git Config](https://dev.to/bdbch/setting-up-ssh-and-git-on-windows-10-2khk)
 
