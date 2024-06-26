@@ -292,12 +292,21 @@ Restart **Apache** and browse to phpMyAdmin web portal using the URL: `http://lo
 3. Confirm installation by check version `psql --version`
 4. Check status, start, stop and restart pg server by command `sudo service postgresql status`, `sudo service postgresql start`, `sudo service postgresql stop`, and `sudo service postgresql restart`
 
-#### Make PG User
+#### PG config
 1. Login to PG Console `sudo -u postgres psql`
-2. Create a DB `create database db_name;`
-3. Create a User on that DB `create user user_name with encrypted password 'password_for_user';`
-4. Set all grant access for this user `grant all privileges on database db_name to user_name;`
-5. Check all DB `\l` and exit console `\q`
+2. Show DB: `\l`, create DB: `CREATE DATABASE db_name;`, delete DB: `DROP DATABASE db_name;`
+3. Create a Superuser and set grant access:
+```
+CREATE USER user_name WITH PASSWORD 'password';
+ALTER USER user_name WITH SUPERUSER;
+GRANT ALL PRIVILEGES ON DATABASE db_name TO user_name;
+
+```
+4. Show DB users: `SELECT usename FROM pg_catalog.pg_user;`, delete user: `DROP USER user_name`
+5. List Users with Roles: `SELECT rolname, rolsuper, rolinherit, rolcreaterole, rolcreatedb, rolcanlogin, rolreplication, rolbypassrls
+FROM pg_catalog.pg_roles;
+`
+6. Check all DB `\l` and exit console `\q`
 
 ### Install Redis by WSL2 - [Link](https://redis.io/docs/getting-started/installation/install-redis-on-windows/)
 1. To install recent stable versions of Redis from the official packages. Add the repository to the apt index, update it, and then install.
