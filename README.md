@@ -326,3 +326,49 @@ sudo apt-get install redis
 2. After install check installed version `redis-server -v`
 3. Update `redis.conf` file, Run the folowing command to open `redis.conf` file: `sudo nano /etc/redis/redis.conf`. Find `supervised no` line and change to `supervised systemd`, save and exit. Since Ubuntu uses the systemd init system. 
 4. Check Redis status, start, stop and restart command `sudo service redis-server status/start/stop/restart`
+
+
+### Swap space Problem (Ubuntu 22.04LTS)
+#### Question to ChatGPT:
+`I am a full-stack developer, I worked on Ruby on Rails, Ionic, Android, Java and so many languages. So which amount should I config with swap now for smooth development perform in ubuntu 22.04, please show me config step by step.`
+
+#### Answer from ChatGPT:
+`To ensure smooth development performance on your Ubuntu 22.04 system, especially with the diverse range of tools and languages you work with, I recommend setting your swap space to at least 16GB. This will provide sufficient virtual memory to handle the demands of development environments and multiple applications running simultaneously.`
+
+#### Step-by-Step Instructions: 
+```
+# Disable any existing swap space
+sudo swapoff -a
+
+# Remove the old swap file if it exists
+sudo rm /swapfile
+
+# Create a new swap file with a size of 64GB
+sudo dd if=/dev/zero of=/swapfile bs=1G count=64
+
+# Set the correct permissions
+sudo chmod 600 /swapfile
+
+# Set up the file as a swap space
+sudo mkswap /swapfile
+
+# Enable the swap file
+sudo swapon /swapfile
+
+# Verify the new swap space
+sudo swapon --show
+
+# Edit /etc/fstab to make the swap file permanent
+sudo nano /etc/fstab
+
+# Add the following line to /etc/fstab
+/swapfile none swap sw 0 0
+
+# Verification
+free -h
+
+```
+
+
+
+
