@@ -68,6 +68,74 @@ asdf install | Version Management Tool for all (Ruby, Java, Node.js etc.)
 `asdf` important commands | version: `asdf version`, details-info: `asdf info`, current-status: `asdf current`, show-all-installed-list: `asdf list`
 `java` install | [Link here](./JAVA.md)
 
+## SSH Key Config and Git with Github (Multiple manage from 1 pc)
+- Generate two SSH keys (if you haven't already): If you have two different SSH keys, skip this step. Otherwise, you can generate another key with the following command:
+```bash
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+```
+When prompted for a file to save the key, use a unique name (e.g., `~/.ssh/id_rsa_personal` and `~/.ssh/id_rsa_work`).
+- Add both SSH keys to your SSH agent
+```bash
+ssh-add ~/.ssh/id_rsa_personal
+ssh-add ~/.ssh/id_rsa_work
+
+```
+- Create or modify the SSH config file: Open the `~/.ssh/config` file in a text editor (create it if it doesn't exist):
+```bash
+nano ~/.ssh/config
+
+```
+- Add your configuration for both keys: Add the following configuration to the `~/.ssh/config` file:
+```bash
+# Personal GitHub account
+Host github-personal
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_personal
+  IdentitiesOnly yes
+
+# Work GitHub account
+Host github-work
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_work
+  IdentitiesOnly yes
+
+```
+This configuration sets up aliases (`github-personal` and `github-work`) to switch between your two keys.
+- Clone repositories using the correct alias: When cloning a repository, use the corresponding alias for the key you want to use.
+```bash
+#personal and work
+git clone git@github-personal:username/repo.git
+git clone git@github-work:username/repo.git
+
+```
+**When pushing or pulling code, Git will automatically use the correct SSH key based on the repository URL you cloned.**
+### N.B >> Additional Tips
+If you’ve already cloned a repository without specifying the alias, you can update the remote URL using:
+- First check current-remote-origin-status
+```bash
+git remote show origin
+```
+Result(like):
+```shell
+* remote origin
+  Fetch URL: git@github.com:plabon-asad/cinnabar-shop-api.git
+  Push  URL: git@github.com:plabon-asad/cinnabar-shop-api.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (fast-forwardable)
+```
+- Update the remote URL using
+```bash
+git remote set-url origin git@github-personal:username/personal-repo.git
+```
+
 ## [SSH and Git Config](https://dev.to/bdbch/setting-up-ssh-and-git-on-windows-10-2khk)
 
 Test your SSH key connection `ssh -T git@github.com`, [Link here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection)
