@@ -81,6 +81,16 @@ ssh-add ~/.ssh/id_rsa_personal
 ssh-add ~/.ssh/id_rsa_work
 
 ```
+- List loaded keys to verify:
+```bash
+ssh-add -l
+
+```
+- Start the agent:
+```bash
+eval "$(ssh-agent -s)"
+
+```
 - Create or modify the SSH config file: Open the `~/.ssh/config` file in a text editor (create it if it doesn't exist):
 ```bash
 nano ~/.ssh/config
