@@ -452,6 +452,9 @@ free -h
 // All installed app
 sudo apt list --installed
 
+// Show upgradable list of apps
+sudo apt list --upgradable
+
 // Update and upgrade installed app
 sudo apt update
 sudo apt upgrade
