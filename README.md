@@ -461,6 +461,9 @@ sudo apt upgrade
 
 // Remove or uninstall an app
 sudo apt remove name_app1 name_app2
+
+// Install specific app after ppa added
+sudo apt install app_name
 ``` 
 
 
