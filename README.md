@@ -447,6 +447,17 @@ free -h
 
 ```
 
+### Ubuntu install and uninstalled study:
+```sh
+// All installed app
+sudo apt list --installed
 
+// Update and upgrade installed app
+sudo apt update
+sudo apt upgrade
+
+// Remove or uninstall an app
+sudo apt remove name_app1 name_app2
+``` 
 
 
